@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Restaurante La Preferida</title>
+    <title>Realizar Pedido - Restaurante La Preferida</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,15 +21,87 @@
 
     <main class="container">
         <h2>Realiza tu pedido</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
 
-            <label for="pedido">Tu pedido:</label>
-            <textarea id="pedido" name="pedido" rows="4" required></textarea>
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Entrantes</legend>
 
-            <label for="contacto">Teléfono o correo:</label>
-            <input type="text" id="contacto" name="contacto" required>
+                <div class="item">
+                    <label>Ensalada fresca - $5</label>
+                    <input type="number" name="cantidad_ensalada" min="0" value="0" class="cantidad">
+                </div>
+
+                <div class="item">
+                    <label>Sopa del día - $4</label>
+                    <input type="number" name="cantidad_sopa" min="0" value="0" class="cantidad">
+                </div>
+
+                <div class="item">
+                    <label>Tostadas con guacamole - $6</label>
+                    <input type="number" name="cantidad_tostadas" min="0" value="0" class="cantidad">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Platos Principales</legend>
+
+                <div class="item">
+                    <label>Pollo a la parrilla - $10</label>
+                    <input type="number" name="cantidad_pollo" min="0" value="0" class="cantidad">
+                </div>
+
+                <div class="item">
+                    <label>Pasta carbonara - $12</label>
+                    <input type="number" name="cantidad_pasta" min="0" value="0" class="cantidad">
+                </div>
+
+                <div class="item">
+                    <label>Filete de res con papas - $15</label>
+                    <input type="number" name="cantidad_filete" min="0" value="0" class="cantidad">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bebidas y Postres</legend>
+
+                <div class="item">
+                    <label>Agua mineral - $2</label>
+                    <input type="number" name="cantidad_agua" min="0" value="0" class="cantidad">
+                </div>
+
+                <div class="item">
+                    <label>Refresco - $3</label>
+                    <input type="number" name="cantidad_refresco" min="0" value="0" class="cantidad">
+                </div>
+
+                <div class="item">
+                    <label>Jugo natural - $4</label>
+                    <input type="number" name="cantidad_jugo" min="0" value="0" class="cantidad">
+                </div>
+
+                <div class="item">
+                    <label>Flan casero - $4</label>
+                    <input type="number" name="cantidad_flan" min="0" value="0" class="cantidad">
+                </div>
+
+                <div class="item">
+                    <label>Tarta de chocolate - $5</label>
+                    <input type="number" name="cantidad_tarta" min="0" value="0" class="cantidad">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tus Datos</legend>
+                <div class="field-item">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="field-item">
+                    <label for="contacto">Teléfono o correo:</label>
+                    <input type="text" id="contacto" name="contacto" required>
+                </div>
+            </fieldset>
 
             <button type="submit">Enviar Pedido</button>
         </form>
