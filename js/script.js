@@ -1,14 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let formulario = document.querySelector("form");
+  const formulario = document.querySelector("form");
+  const boton = document.getElementById("boton-pedido");
+  const cantidades = document.querySelectorAll(".cantidad");
 
-  document.getElementById("boton-pedido").addEventListener("click", () => {
+  cantidades.forEach(cant => {
+    cant.addEventListener("keydown", (event) => {
+      if(event.key == "." || event.key == "-")
+        event.preventDefault();
+    });
+  });
+
+  boton.addEventListener("click", () => {
     const cantidadesOK = validarCantidadDeProductos();
     const informacionOK = validarDatosDelCliente();
 
     if(cantidadesOK && informacionOK){
-        const total = calcularTotal();
-        document.getElementById("mensaje-total").innerHTML =
-            `¡Gracias por su compra ${document.getElementById("nombre").value}, su pedido llegará en breve!<br>El total a pagar es: $${total}`;
+      const nombre = document.getElementById("nombre").value;
+      const total = calcularTotal();
+      document.getElementById("mensaje-total").innerHTML = "¡Gracias por su compra " + nombre + ", su pedido llegará en breve!<br> El total a pagar es: $" + total;
     }
   });
 });
