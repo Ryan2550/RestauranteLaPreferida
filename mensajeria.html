@@ -22,94 +22,102 @@
     <main class="container">
         <h2>Realiza tu pedido</h2>
 
-        <form action="#" method="post">
-            
+        <form>
             <fieldset>
                 <legend>Entrantes</legend>
-
+                
                 <div class="item">
-                    <label>Ensalada fresca - $5</label>
-                    <input type="number" name="cantidad_ensalada" min="0" value="0" class="cantidad">
+                    <label>Ensalada fresca - $500</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="500">
                 </div>
 
                 <div class="item">
-                    <label>Sopa del día - $4</label>
-                    <input type="number" name="cantidad_sopa" min="0" value="0" class="cantidad">
+                    <label>Sopa del día - $400</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="400">
                 </div>
 
                 <div class="item">
-                    <label>Tostadas con guacamole - $6</label>
-                    <input type="number" name="cantidad_tostadas" min="0" value="0" class="cantidad">
+                    <label>Tostadas con guacamole - $300</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="300">
                 </div>
+
             </fieldset>
 
             <fieldset>
+
                 <legend>Platos Principales</legend>
-
+                
                 <div class="item">
-                    <label>Pollo a la parrilla - $10</label>
-                    <input type="number" name="cantidad_pollo" min="0" value="0" class="cantidad">
+                    <label>Pollo a la parrilla - $1500</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="1500">
                 </div>
 
                 <div class="item">
-                    <label>Pasta carbonara - $12</label>
-                    <input type="number" name="cantidad_pasta" min="0" value="0" class="cantidad">
+                    <label>Pasta carbonara - $1300</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="1300">
                 </div>
 
                 <div class="item">
-                    <label>Filete de res con papas - $15</label>
-                    <input type="number" name="cantidad_filete" min="0" value="0" class="cantidad">
+                    <label>Filete de res con papas - $2000</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="2000">
                 </div>
+
             </fieldset>
 
             <fieldset>
                 <legend>Bebidas y Postres</legend>
-
+                
                 <div class="item">
-                    <label>Agua mineral - $2</label>
-                    <input type="number" name="cantidad_agua" min="0" value="0" class="cantidad">
+                    <label>Refresco - $250</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="250">
                 </div>
 
                 <div class="item">
-                    <label>Refresco - $3</label>
-                    <input type="number" name="cantidad_refresco" min="0" value="0" class="cantidad">
+                    <label>Jugo natural - $150</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="150">
                 </div>
 
                 <div class="item">
-                    <label>Jugo natural - $4</label>
-                    <input type="number" name="cantidad_jugo" min="0" value="0" class="cantidad">
+                    <label>Flan casero - $500</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="500">
                 </div>
 
                 <div class="item">
-                    <label>Flan casero - $4</label>
-                    <input type="number" name="cantidad_flan" min="0" value="0" class="cantidad">
+                    <label>Tarta de chocolate - $800</label>
+                    <input type="number" class="cantidad" min="0" value="0" data-precio="800">
                 </div>
-
-                <div class="item">
-                    <label>Tarta de chocolate - $5</label>
-                    <input type="number" name="cantidad_tarta" min="0" value="0" class="cantidad">
-                </div>
+                
             </fieldset>
 
             <fieldset>
                 <legend>Tus Datos</legend>
+
                 <div class="field-item">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" required>
                 </div>
+
                 <div class="field-item">
-                    <label for="contacto">Teléfono o correo:</label>
-                    <input type="text" id="contacto" name="contacto" required>
+                    <label for="telefono">Número de teléfono:</label>
+                    <input type="text" id="telefono" required>
                 </div>
+
+                <div class="field-item">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" required>
+                </div>
+
             </fieldset>
 
-            <button type="submit">Enviar Pedido</button>
+            <button type="button" id="boton-pedido">Enviar Pedido</button>
         </form>
+        <div id="mensaje-total"></div>
     </main>
 
     <footer>
         <p>&copy; 2025 Restaurante Familiar La Preferida</p>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
+
