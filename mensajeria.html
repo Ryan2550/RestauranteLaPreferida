@@ -8,126 +8,74 @@
 </head>
 <body>
 
-    <header>
-        <h1>Restaurante La Preferida</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="mensajeria.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <h1>Restaurante La Preferida</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="mensajeria.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main class="container">
-        <h2>Realiza tu pedido</h2>
+<main class="container">
+    <h2>Realiza tu pedido</h2>
 
-        <form>
-            <fieldset>
-                <legend>Entrantes</legend>
-                
-                <div class="plato">
-                    <label>Tartar de Salmón Ahumado - $500</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="500">
-                </div>
+    <form>
 
-                <div class="plato">
-                    <label>Foie Gras - $400</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="400">
-                </div>
+        <fieldset>
+            <legend>Entrantes</legend>
+            <div id="entrantes"></div>
+        </fieldset>
 
-                <div class="plato">
-                    <label>Carpaccio de Res - $300</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="300">
-                </div>
+        <fieldset>
+            <legend>Platos Principales</legend>
+            <div id="principales"></div>
+        </fieldset>
 
-                <div class="plato">
-                    <label>Ostras Frescas - $500</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="500">
-                </div>
+        <fieldset>
+            <legend>Bebidas y Postres</legend>
+            <div id="postres"></div>
+            <div id="error-total" class="error"></div>
+        </fieldset>
 
-            </fieldset>
+        <fieldset>
+            <legend>Tus Datos</legend>
 
-            <fieldset>
+            <div class="field-item">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <div class="error" id="error-nombre"></div>
+            </div>
 
-                <legend>Platos Principales</legend>
-                
-                <div class="plato">
-                    <label>Filete Mignon - $1500</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="1500">
-                </div>
+            <div class="field-item">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="text" id="telefono" required>
+                <div class="error" id="error-telefono"></div>
+            </div>
 
-                <div class="plato">
-                    <label>Risotto de Langosta - $1300</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="1300">
-                </div>
+            <div class="field-item">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" required>
+                <div class="error" id="error-direccion"></div>
+            </div>
 
-                <div class="plato">
-                    <label>Confit de Pato - $2000</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="2000">
-                </div>
+        </fieldset>
 
-                <div class="plato">
-                    <label>Salmón en Papillote - $2000</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="2000">
-                </div>
+        <button type="button" id="boton-pedido">Enviar Pedido</button>
+    </form>
 
-            </fieldset>
+    <div id="mensaje-total" class="mensaje-exito"></div>
 
-            <fieldset>
-                <legend>Bebidas y Postres</legend>
-                
-                <div class="plato">
-                    <label>Tarta de Chocolate Belga - $250</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="250">
-                </div>
+</main>
 
-                <div class="plato">
-                    <label>Crème Brûlée - $150</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="150">
-                </div>
+<script src="js/mensajeria.js"></script>
 
-                <div class="plato">
-                    <label>Macarons Variados - $500</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="500">
-                </div>
-
-                <div class="plato">
-                    <label>Cóctel “Golden Martini” - $800</label>
-                    <input type="number" class="cantidad" min="0" value="0" data-precio="800">
-                </div>
-                
-            </fieldset>
-
-            <fieldset>
-                <legend>Tus Datos</legend>
-
-                <div class="field-item">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" required>
-                </div>
-
-                <div class="field-item">
-                    <label for="telefono">Número de teléfono:</label>
-                    <input type="text" id="telefono" required>
-                </div>
-
-                <div class="field-item">
-                    <label for="direccion">Dirección:</label>
-                    <input type="text" id="direccion" required>
-                </div>
-
-            </fieldset>
-
-            <button type="button" id="boton-pedido">Enviar Pedido</button>
-        </form>
-        <div id="mensaje-total"></div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Restaurante Familiar La Preferida</p>
-    </footer>
-    <script src="js/script.js"></script>
+<footer>
+    <p>&copy; 2025 Restaurante Familiar La Preferida</p>
+</footer>
 </body>
 </html>
+
 
