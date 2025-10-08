@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
 }
@@ -18,12 +18,12 @@ img {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background-color:rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 header {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     color: white;
     padding: 20px;
     text-align: center;
@@ -48,7 +48,7 @@ nav a {
 }
 
 h2, h3 {
-    color: #d91313;
+    color: rgb(212, 21, 21);
     text-align: center;
     margin-top: 0;
 }
@@ -60,7 +60,7 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(255, 255, 255);
     padding-bottom: 5px;
     margin-top: 30px;
 }
@@ -117,8 +117,8 @@ input, textarea {
 }
 
 button {
-    background-color: #8b0000;
-    color: white;
+    background-color: rgb(212, 21, 21);
+    color: rgb(255, 255, 255);
     padding: 12px;
     border: none;
     cursor: pointer;
@@ -126,14 +126,14 @@ button {
 }
 
 button:hover {
-    background-color: #a52a2a;
+    background-color: rgb(180, 39, 39);
 }
 
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #333;
-    color: white;
+    background-color: rgb(255, 50, 50);
+    color: rgb(255, 255, 255);
     margin-top: 20px;
 }
 
@@ -183,17 +183,17 @@ footer {
 #mensaje-total {
     margin-top: 20px;
     font-weight: bold;
-    color: green;
-    border: 2px solid green;
+    color: rgb(37, 146, 37);
+    border: 2px solid  rgb(37, 146, 37);
     padding: 15px;
     border-radius: 10px;
-    background-color: #e6ffe6;
+    background-color: rgb(167, 246, 167);
     text-align: center;
     font-size: 1.2em;
 }
 
 .tarjeta-plato{
-    background: #fffaf0;
+    background: rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0,0,0,0.2);
     width: 300px;
@@ -220,13 +220,13 @@ footer {
     font-size: 1.4em;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #8b0000;
+    color: rgb(192, 0, 0);
 }
 
 .precio {
     font-weight: bold;
     font-size: 1.2em;
-    color: #8b0000;
+    color: rgb(192, 0, 0);
     display: block;
 }
 
@@ -238,24 +238,24 @@ footer {
 }
 
 .error {
-    color: red;
+    color: rgb(255, 0, 0);
     font-size: 0.9em;
     margin-top: 3px;
     display: block;
 }
 
 .error-input {
-    border-color: red;
+    border-color: rgb(255, 0, 0);
 }
 
 .mensaje-exito {
-    color: green;
+    color: rgb(0, 128, 0);
     font-weight: bold;
     margin-top: 15px;
     padding: 10px;
-    border: 2px solid green;
+    border: 2px solid rgb(0, 128, 0);
     border-radius: 10px;
-    background-color: #e6ffe6;
+    background-color: rgb(165, 252, 134);
     text-align: center;
     font-size: 1.1em;
     display: none;

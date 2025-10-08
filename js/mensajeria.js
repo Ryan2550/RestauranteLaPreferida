@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { nombre: "Macarons Variados", precio: 500 },
       { nombre: "Golden Martini", precio: 800 }
     ]
-  };
+  }
 
   const crearPlatos = (platos, contenedorId) => {
     const contenedor = document.getElementById(contenedorId);
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
       contenedor.appendChild(div);
     });
-  };
+  }
 
   crearPlatos(menu.entrantes, "entrantes");
   crearPlatos(menu.principales, "principales");
@@ -59,7 +59,7 @@ const limpiarErrores = () => {
   document.querySelectorAll(".error-input").forEach(input => input.classList.remove("error-input"));
   const exito = document.getElementById("mensaje-total");
   if (exito) exito.style.display = "none";
-};
+}
 
 const validarCantidadDeProductos = () => {
   const cantidades = document.querySelectorAll(".cantidad");
@@ -77,7 +77,7 @@ const validarCantidadDeProductos = () => {
   }
 
   return validado;
-};
+}
 
 const validarDatosDelCliente = () => {
   let validado = true;
@@ -102,7 +102,7 @@ const validarDatosDelCliente = () => {
   }
 
   return validado;
-};
+}
 
 const marcarError = (input, mensaje) => {
   input.classList.add("error-input");
@@ -113,7 +113,7 @@ const marcarError = (input, mensaje) => {
     input.parentNode.appendChild(errorDiv);
   }
   errorDiv.textContent = mensaje;
-};
+}
 
 const calcularTotal = () => {
   let total = 0;
@@ -123,7 +123,7 @@ const calcularTotal = () => {
     total += precio * cantidad;
   });
   return total;
-};
+}
 
 const mostrarExito = (mensaje) => {
   let exito = document.getElementById("mensaje-total");
@@ -135,7 +135,7 @@ const mostrarExito = (mensaje) => {
   }
   exito.textContent = mensaje;
   exito.style.display = "block";
-};
+}
 
 
 

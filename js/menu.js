@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
     ]
   };
 
-  function generarPlatoHTML(plato) {
+  const generarPlatoHTML = (plato) => {
     return `
-      <div class="tarjeta-plato">
+    <div class="tarjeta-plato">
         <img src="${plato.img}" alt="${plato.nombre}" class="plato-img">
         <div class="plato-info">
           <h4>${plato.nombre}</h4>
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  function mostrarSeccion(seccionId, platos) {
+  const mostrarSeccion = (seccionId, platos) => {
     const contenedor = document.getElementById(seccionId);
     contenedor.innerHTML = platos.map(generarPlatoHTML).join('');
   }
